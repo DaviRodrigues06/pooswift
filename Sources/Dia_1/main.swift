@@ -100,7 +100,6 @@ class Professor: Pessoa {
     }
 }
 
-// MARK: - Aula
 
 class Aula {
     let nome: String
@@ -156,8 +155,10 @@ class Aula {
         }
     }
 }
+// Agenda semanal das aulas
+// Agenda semanal do aluno e do professor
+// Avaliacao fisica do aluno (pedir peso altura e mais algumas informações para atualizacao de nivel)
 
-// MARK: - Testes
 
 let prof1 = Professor(nome: "Davi", email: "davi@email.com", especialidade: .musculacao)
 let aluno1 = Aluno(nome: "Bruno", email: "bruno@email.com", matricula: "MAT-001", plano: CatalogoPlanos.mensal, nivel: .iniciante)
@@ -168,8 +169,8 @@ let aula1 = Aula(nome: "Yoga Manhã", professor: prof1, data: "Segunda 07:00", c
 
 aula1.inscreverAluno(aluno1)
 aula1.inscreverAluno(aluno2)
-aula1.inscreverAluno(aluno1) // já inscrito
-aula1.inscreverAluno(aluno3) // sem vagas
+aula1.inscreverAluno(aluno1)
+aula1.inscreverAluno(aluno3)
 
 aula1.verAlunos()
 
